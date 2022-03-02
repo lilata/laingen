@@ -1,0 +1,18 @@
+{% capture title %}{{ name }} Archive{% endcapture %}
+{% capture body %}
+  <section>
+    <h1>{{ name }} Archive</h1>
+  </section>
+  <section class="less-centered">
+    {% for item in items %}
+      <div>
+        <h2>
+          <a href="{{ item.url }}">
+            {{ item.title }}
+          </a>
+        </h2>
+      </div>
+    {% endfor %}
+  </section>
+{% endcapture %}
+{% render "base", title: title, body: body %}

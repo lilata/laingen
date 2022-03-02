@@ -1,0 +1,12 @@
+{% capture body %}
+    <section>
+    <h1>{{ Title }}</h1>
+    <h5>Archived From: {{ Origin }}</h5>
+    </section>
+    <hr>
+    <section class="less-centered">
+    {{ html }}
+    <h5>Posted at {{ Date }}</h5>
+    </section>
+{% endcapture %}
+{% render "base", title: item.Title, body: body %}

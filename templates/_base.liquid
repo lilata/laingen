@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>{{ title }}</title>
+    {{ head }}
+</head>
+<body>
+<header><h1>
+    <a class="logo" href="/">shinji.rocks</a>
+    <br>
+    <span class="hide-on-mobile">
+    <a href="/blog/">Blog</a>
+    <a href="/projects/">Projects</a>
+    <a href="/about/">About</a>
+    <a href="/donate/">Donate</a>
+    <a href="/rss.xml">RSS</a>
+    <a href="/archive/">Archive</a>
+    </span>
+</h1></header>
+<main>
+    {{ body }}
+    <h2 class="show-on-mobile">
+        <a href="/about/">About</a>
+        <a href="/donate/">Donate</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/archive/">Archive</a>
+    </h2>
+    <hr>
+    <h2>
+      <span>Cool Sites: &nbsp;</span>
+      <a href="https://lainchan.org">lainchan</a>
+    </h2>
+</main>
+</body>
+</html>

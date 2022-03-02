@@ -1,0 +1,19 @@
+{% capture body %}
+    <section>
+    <h1>Projects</h1>
+    </section>
+    <section class="centered">
+    {% for p in projects %}
+        <div>
+        <h2><a
+               href="{{ p.url }}">
+            {{ p.name }}
+        </a></h2>
+        <p>
+            {{ p.description }}
+        </p>
+        </div>
+    {% endfor %}
+    </section>
+{% endcapture %}
+{% render "base", title: "Projects", body: body %}

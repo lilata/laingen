@@ -1,0 +1,17 @@
+{% capture body %}
+    <section>
+    <h1><a href="/blog/">Blog</a></h1>
+    {% for post in posts %}
+            <p><a href="{{ post.url }}">{{ post.Title }}</a></p>
+    {% endfor %}
+    <div class="section"></div>
+    <h1 class="section-header"><a href="/projects/">Projects</a></h1>
+    {% for p in projects %}
+            <p><a href="{{ p.url }}">{{ p.name }}</a></p>
+    {% endfor %}
+    <h1>Services</h1>
+    <p><a href="https://alois.shinji.rocks">Alois API</a></p>
+    <p><a href="https://git.Shinji.rocks">Shinji Git</a></p>
+    </section>
+{% endcapture %}
+{% render "base", title: "shinji.rocks", body: body %}

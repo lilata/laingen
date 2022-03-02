@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Shinji's Blog</title>
+    <description>Subscribe to get the latest posts from the Shinji's Blog!</description>
+    <link>{{ base_url }}/index.xml</link>
+    <image>
+      <url></url>
+      <title>Shinji's Blog</title>
+      <link></link>
+    </image>
+    {% for post in posts %}
+    <item>
+      <title>{{ post.Title }}</title>
+      <guid isPermalink="true">{{ base_url }}{{ post.url }}</guid>
+      <link>{{ base_url }}{{ post.url }}</link>
+      <pubDate>{{ post.Date }}</pubDate>
+      <description>{{ post.Summary }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+{% capture body %}
+    <section>
+        <h1>{{ Title }}</h1>
+        <p>{{ Summary }}</p>
+    </section>
+    <section class="less-centered">
+    {{ html }}
+    <h5>Posted by {{ Author }} at {{ Date }} </h5>
+    {% unless Tags == empty %}
+        <div><p>tags: {% for tag in Tags %}<a href='/blog/tags/{{ tag }}'>{{ tag }}</a>&nbsp;{% endfor %}</p></div>
+    {% endunless %}
+    </section>
+    <section>
+        <h2><a href="{{ alois_base_url }}/comment/render?key={{ base_url }}{{ url }}">View Comments</a></h2>
+        <h2>Add Comment</h2>
+        <form action="{{ alois_base_url }}/comment/add" method="POST">
+            <input type="hidden" name="key" value="{{ base_url }}{{ url }}"/>
+            Your Username:<br>
+            <input type="text" name="username"/><br>
+            Your Content:<br>
+            <textarea cols="50" name="content" rows="10"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+{% endcapture %}
+{% render "base", title: Title, body: body %}

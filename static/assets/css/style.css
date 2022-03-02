@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'mononoki Regular';
+    src: url("/assets/fonts/mononoki-Regular.woff2");
+}
+section {
+    text-align: center;
+    font-size: 1.2em;
+}
+section.centered {
+    text-align: left;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+section.less-centered {
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+img.qr {
+    width: 10vw;
+    height: auto;
+}
+a {
+    color: #222222;
+    margin-right: 0.3em;
+}
+pre > code {
+    display: block;
+    overflow-x: scroll;
+    color: #073642;
+}
+code {
+    font-family: "mononoki Regular", sans-serif;
+    background-color: #eeeeee;
+}
+textarea {
+    resize: none;
+}
+.show-on-mobile {
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    img.qr {
+        width: 50vw;
+    }
+    textarea, input {
+        width: 80vw;
+    }
+    section.centered {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section.less-centered {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .show-on-mobile {
+        display: block;
+    }
+}

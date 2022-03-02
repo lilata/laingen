@@ -1,0 +1,9 @@
+%{
+  "earmark": {:hex, :earmark, "1.4.20", "d5097b1c7417a03c73a2985fcf01c3f72192c427b8a498719737dca5273938cb", [:mix], [{:earmark_parser, "== 1.4.18", [hex: :earmark_parser, repo: "hexpm", optional: false]}], "hexpm", "7be744242dbde74c858279f4a65d9d31f37d163190d739340015c30038c1edb3"},
+  "earmark_parser": {:hex, :earmark_parser, "1.4.18", "e1b2be73eb08a49fb032a0208bf647380682374a725dfb5b9e510def8397f6f2", [:mix], [], "hexpm", "114a0e85ec3cf9e04b811009e73c206394ffecfcc313e0b346de0d557774ee97"},
+  "nimble_parsec": {:hex, :nimble_parsec, "1.2.2", "b99ca56bbce410e9d5ee4f9155a212e942e224e259c7ebbf8f2c86ac21d4fa3c", [:mix], [], "hexpm", "98d51bd64d5f6a2a9c6bb7586ee8129e27dfaab1140b5a4753f24dac0ba27d2f"},
+  "solid": {:hex, :solid, "0.11.0", "300ebf429f4640852183ef295a3944da03564f75e2e4814f0cf7457523fc7fae", [:mix], [{:nimble_parsec, "~> 1.0", [hex: :nimble_parsec, repo: "hexpm", optional: false]}], "hexpm", "74d28b201a899b942f870879467a15f3f87bac45e86c393e64f7ce0dcb0832c8"},
+  "yamerl": {:hex, :yamerl, "0.10.0", "4ff81fee2f1f6a46f1700c0d880b24d193ddb74bd14ef42cb0bcf46e81ef2f8e", [:rebar3], [], "hexpm", "346adb2963f1051dc837a2364e4acf6eb7d80097c0f53cbdc3046ec8ec4b4e6e"},
+  "yaml_elixir": {:hex, :yaml_elixir, "2.8.0", "c7ff0034daf57279c2ce902788ce6fdb2445532eb4317e8df4b044209fae6832", [:mix], [{:yamerl, "~> 0.8", [hex: :yamerl, repo: "hexpm", optional: false]}], "hexpm", "4b674bd881e373d1ac6a790c64b2ecb69d1fd612c2af3b22de1619c15473830b"},
+  "yaml_front_matter": {:hex, :yaml_front_matter, "1.0.0", "9f3310906a9647d04fc4715b6bac5ed177defc9625c53b93430d36d8fd0961db", [:mix], [{:yaml_elixir, "~> 2.0", [hex: :yaml_elixir, repo: "hexpm", optional: false]}], "hexpm", "73cf825c18b7a14bfd8fb5856fa4887196035be69d2d45d1c370917aae0572ec"},
+}

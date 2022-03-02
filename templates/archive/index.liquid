@@ -1,0 +1,19 @@
+{% assign title = "Shinji's Archive" %}
+{% capture body %}
+  <section>
+    <h1>Shinji's Archive</h1>
+    {% if names == empty %}
+      <h2>The archive is empty right now :3</h2>
+    {% endif %}
+  </section>
+  <section class="less-centered">
+    {% for name in names %}
+      <div>
+        <h2>
+          <a href="/archive/{{ name }}/">{{ name }}</a> Archive
+        </h2>
+      </div>
+    {% endfor %}
+  </section>
+{% endcapture %}
+{% render "base", title: title, body: body %}
