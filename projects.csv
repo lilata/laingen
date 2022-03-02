@@ -1,3 +1,4 @@
 name|description|url
 Alois API| Alois API implements some useful apis.| https://git.shinji.rocks/shinji/alois
 UGH|Some web services provided by me, in Django(Python).| https://git.shinji.rocks/shinji/ugh
+Laingen| Static site generator.| https://git.shinji.rocks/shinji/laingen
