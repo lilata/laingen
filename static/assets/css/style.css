@@ -61,3 +61,7 @@ textarea {
         display: block;
     }
 }
+
+iframe {
+    text-align: center;
+}

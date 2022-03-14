@@ -11,7 +11,7 @@
     {% endunless %}
     </section>
     <section>
-        <h2><a href="{{ alois_base_url }}/comment/render?key={{ base_url }}{{ url }}">View Comments</a></h2>
+        <iframe width="100%" href="{{ alois_base_url }}/comment/render?key={{ base_url }}{{ url }}&iframe=1"></iframe>
         <h2>Add Comment</h2>
         <form action="{{ alois_base_url }}/comment/add" method="POST">
             <input type="hidden" name="key" value="{{ base_url }}{{ url }}"/>
