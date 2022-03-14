@@ -1,4 +1,4 @@
-Hi, I'm Shinji, the owner of shinji.rocks. I'm currently a CS undergrad, and I love me!
+Hi, I'm Shinji, the owner of shinji.rocks, and I operate lain.day. I'm currently a CS undergrad, and I love me!
 
 You can reach me...
 
