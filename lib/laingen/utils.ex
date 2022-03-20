@@ -35,7 +35,7 @@ defmodule Laingen.Utils do
 
   def render_template(template, vars) do
     fs = Solid.LocalFileSystem.new(File.cwd! <> "/templates")
-    default_vars = %{"base_url"=>"https://shinji.rocks", "alois_base_url"=> "https://alois.shinji.rocks"}
+    default_vars = %{"base_url"=>"https://shinji.rocks", "alois_base_url"=> "https://alois.lain.day"}
     vars = Map.merge(vars, default_vars)
     Solid.render(template, vars, [file_system: {Solid.LocalFileSystem, fs}])
   end
