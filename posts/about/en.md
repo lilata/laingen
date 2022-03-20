@@ -12,7 +12,7 @@ I run...
 
 * my website: [shinji.rocks](https://shinji.rocks)
 
-* my APIs: [alois.shinji.rocks](https://alois.shinji.rocks)
+* my APIs: [alois.lain.day](https://alois.lain.day)
 
 * and some other stuff.
 
