@@ -1,5 +1,11 @@
 # Laingen
 
+**TODO List**
+* Full text in RSS
+* Un-bold summary text and add time tags in tag pages
+* mail gpg key
+
+
 **TODO: Add description**
 
 ## Installation
