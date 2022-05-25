@@ -15,7 +15,7 @@
       <guid isPermalink="true">{{ base_url }}{{ post.url }}</guid>
       <link>{{ base_url }}{{ post.url }}</link>
       <pubDate>{{ post.Date }}</pubDate>
-      <description>{{ post.Summary }}</description>
+      <description>{{ post.Summary }}&lt;br&gt;&lt;br&gt;{{ post.Html | escape }}</description>
     </item>
     {% endfor %}
   </channel>

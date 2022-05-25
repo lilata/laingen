@@ -47,7 +47,7 @@ defmodule Laingen.Renderer do
       filename = Utils.set_file_ext(post, ".html")
       Utils.render_template(template, ctx)
       |> Enum.map(fn text -> File.write(out_dir <> "/" <> filename, text, [:append]) end)
-      metadata
+      Map.merge(metadata, %{"Html" => html})
     else
       nil
     end
@@ -126,9 +126,9 @@ defmodule Laingen.Renderer do
   def render_with_context(template_name, context, target_file) do
     out_dir = Utils.parent_dir(target_file)
     File.mkdir_p(out_dir)
-    Utils.get_template(template_name)
+    rendered_text = Utils.get_template(template_name)
     |> Utils.render_template(context)
-    |> Enum.map(fn text -> File.write(target_file, text, [:append]) end)
+    File.write(target_file, rendered_text, [:append])
   end
 
 
